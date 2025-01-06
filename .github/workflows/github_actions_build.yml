@@ -31,6 +31,6 @@ jobs:
       run: |
         cd P372/Win32/P372
         msbuild /p:Configuration=Release /p:Platform="x64" P372.sln
-    # - uses: actions/upload-artifact@v4
-    #   with:
-    #     path:
+    - uses: actions/upload-artifact@v4
+      with:
+        path: P372\Win32\P372\x64\Release\P372_x64.dll
