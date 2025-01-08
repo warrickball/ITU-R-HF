@@ -13,6 +13,7 @@ jobs:
         make all
     - uses: actions/upload-artifact@v4
       with:
+        name: P372-linux
         path: P372/Linux/libp372.so
 
   buildOSX:
@@ -36,4 +37,5 @@ jobs:
         msbuild /p:Configuration=Release /p:Platform="x64" P372.sln
     - uses: actions/upload-artifact@v4
       with:
+        name: P372-windows
         path: P372\Win32\P372\x64\Release\P372_x64.dll
