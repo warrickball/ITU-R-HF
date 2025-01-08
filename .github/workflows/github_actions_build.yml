@@ -11,6 +11,9 @@ jobs:
       run: |
         cd Linux
         make all
+    - uses: actions/upload-artifact@v4
+      with:
+        path: P372/Linux/libp372.so
 
   buildOSX:
     runs-on: macOS-latest
